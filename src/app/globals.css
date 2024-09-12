@@ -2,32 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #1b2631;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.main-container {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.content-column {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2%;
+    padding: 5px;
+    border: 2px solid #f0f3f4;
+    width: 450px;
+    height: 300px;
+    scrollbar-width: thin;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+h1 {
+    color: #f7f9f9;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    color: #f0f3f4;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+h3 {
+    color: #d0d3d4;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+p {
+    color: #b3b6b7;
+}
+
+li {
+    color: rgb(94, 234, 212);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 6px;
+    border: white 2px solid;
+}
+
+.link-to-work {
+    color: #d91e18;
+    font-size: 1.7em;
+}
+
