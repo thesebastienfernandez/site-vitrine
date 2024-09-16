@@ -12,10 +12,11 @@ When defining the props for a component, make sure they are assigned to the type
 interface MyComponentProps extends React.HTMLAttributes<HTMLDivElement> {
     content: string;
     onClick: () => void;
+    disabled: boolean;
   }
 
 export const Button: React.FC<MyComponentProps> = (props) => {
     return(
-        <button onClick={props.onClick} className="border-2 border-[#f7f9f9] text-[#f0f3f4] p-1 rounded">{props.content}</button>
+        <button onClick={props.onClick} disabled={props.disabled} className="border-2 border-[#f7f9f9] text-[#f0f3f4] p-1 rounded">{props.content}</button>
     )
 }
