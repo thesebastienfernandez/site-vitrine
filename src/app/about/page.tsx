@@ -9,7 +9,7 @@ const About = () => {
                 <h1 className="text-center lg:text-left">à propos de moi</h1>
             </header>
             <main className="flex flex-col items-center sm:flex-row">
-                <div className="p-4 border-solid border-4 border-[#5EEAD4] rounded">
+                <div>
                     <Image src={myImage} alt="picture of the author" width={800} height={800} title="Sébastien Fernandez - Dévelopeur front-end" />
                 </div>
                 <p className="p-4">

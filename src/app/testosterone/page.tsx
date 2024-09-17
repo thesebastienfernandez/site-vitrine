@@ -44,8 +44,8 @@ const Testosterone = () => {
             <header className="mt-48 sm:mt-24">
                 <h1 className="text-center lg:text-left">Il faut sauver le soldat Testo</h1>
             </header>
-            <main className='flex justify-around'>
-                <div>
+            <main className='flex flex-col justify-around items-center md:flex-row'>
+                <div className='pb-8'>
                     {situation === 0 ?  
                         <div><p>Identifiez vous soldat</p>
                         <input className='mr-4 rounded h-[36px]' size={40} type="text" value={name} onChange={(e) => setName(e.target.value)} />
